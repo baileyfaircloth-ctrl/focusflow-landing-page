@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="FocusFlow is a simple productivity tool for planning your day."
+    />
+    <title>FocusFlow | Plan Better Days</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Main navigation">
+        <a class="logo" href="#home">Focus<span>Flow</span></a>
+
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#daily-tip">Daily Tip</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <p class="eyebrow">A calmer way to work</p>
+          <h1>Make room for what matters.</h1>
+          <p class="hero-text">
+            FocusFlow helps you organize priorities, protect your attention,
+            and finish each day feeling accomplished.
+          </p>
+          <a class="primary-button" href="#contact">Try FocusFlow</a>
+        </div>
+
+        <div class="hero-image-container">
+          <img
+            class="hero-image"
+            src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=1000&q=80"
+            alt="A notebook, pen, and coffee on a desk used for daily planning"
+          />
+        </div>
+      </section>
+
+      <section class="features-section" id="features">
+        <div class="section-heading">
+          <p class="eyebrow">Built for real life</p>
+          <h2>Small tools. Meaningful progress.</h2>
+          <p>
+            FocusFlow keeps planning simple so you can spend less time
+            organizing and more time doing.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon">✓</div>
+            <h3>Choose your top three</h3>
+            <p>
+              Start every day by identifying the three tasks that will make
+              the biggest difference.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">◷</div>
+            <h3>Protect focus time</h3>
+            <p>
+              Build intentional blocks of time for deep work, breaks, and the
+              work that needs your attention.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">↗</div>
+            <h3>See your progress</h3>
+            <p>
+              End the day by recognizing completed work and carrying only the
+              important tasks forward.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="tip-section" id="daily-tip">
+        <div class="tip-content">
+          <p class="eyebrow">A quick reset</p>
+          <h2>Your daily focus tip</h2>
+          <p id="tip-text" class="tip-text">
+            Pick one important task and work on it for 25 uninterrupted
+            minutes.
+          </p>
+          <button id="tip-button" class="secondary-button" type="button">
+            Show me another tip
+          </button>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="contact-content">
+          <div>
+            <p class="eyebrow">Stay in the loop</p>
+            <h2>Get ready to focus.</h2>
+            <p>
+              Join the FocusFlow list for productivity tips and updates about
+              the project.
+            </p>
+          </div>
+
+          <form id="signup-form" class="signup-form">
+            <label for="name">Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Your name"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              required
+            />
+
+            <label for="message">What would you like help focusing on?</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Tell us a little about your goals..."
+            ></textarea>
+
+            <button class="primary-button form-button" type="submit">
+              Join the list
+            </button>
+
+            <p id="form-message" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 FocusFlow. Designed for better days.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
